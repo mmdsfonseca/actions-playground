@@ -1,0 +1,41 @@
+name: "Exercicio 1 Madalena"
+
+on:
+  push:
+  
+jobs:
+  print_dat_ubuntu:
+    name: Mostar data Ubuntu!
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Mostar data Ubuntu!
+        run: date
+        
+  print_dat_windows:
+    name: Mostar data Windows!
+    runs-on: windows-latest
+    
+    steps:
+      - name: Mostar data Windows!
+        run: date
+        
+  print_dat_macos:
+    name: Mostar data MacOS!
+    runs-on: macos-latest
+    
+    steps:
+      - name: Mostar data MacOS!
+        run: date
+        
+  print_dat_ubuntu2:
+    name: Mostar data Ubuntu2!
+    runs-on: ubuntu-latest
+    needs:
+      - print_dat_ubuntu
+      - print_dat_windows
+      - print_dat_macos
+    
+    steps:
+      - name: Mostar data Ubuntu2!
+        run: echo 'Exercicio mostrar a Data'  
