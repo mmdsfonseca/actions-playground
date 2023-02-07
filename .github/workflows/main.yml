@@ -38,4 +38,4 @@ jobs:
     
     steps:
       - name: Mostar data Ubuntu2!
-        run: echo 'Exercicio mostrar a Data'  
+        run: echo 'Exercicio mostrar a Data 1'  
